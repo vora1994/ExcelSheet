@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+           <!-- loading css and js -->
+            <script src="src/functions.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+ </head>
+<body>
+<header id="header">
+        <div class="container">
+            <h1>
+                SpreadSheet
+            </h1>
+
+
+    <nav id="nav">
+            <ul>
+                <li>
+<!-- buttons for adding deleting cells and csv -->
+                <button class="btn" onClick="addRow()" ><i class="fa fa-plus"> </i> row</button>
+                <button class="btn" onClick='deleteRow()'><i class="fa fa-minus"> </i> row</button>
+                <button class="btn" onClick="addColumn()"><i class="fa fa-plus"> </i> column</button>
+                <button class="btn" onClick='deleteColumn()'><i class="fa fa-minus"> </i> column</button>
+                <button class="btn" onclick="exportTableToCSV('spreadsheet.csv')"><i class="fa fa-download"></i> Export HTML Table To CSV File</button>
+                </li>
+                
+            </ul>
+        </nav>
+        </div>
+</header>
+<div class="content">
+    <!-- table -->
+<table></table>
+
+</div>
+<!-- loading javascript -->
+
+    <script src="src/functions.js"></script>
+</body>
+</html>
